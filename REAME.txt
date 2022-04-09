@@ -1,0 +1,107 @@
+═════════════════════════════════════════════════════════════════════════════════════════
+
+I WILL SET THE BOT ONLINE IF YOU PREFER, THE CODE IS ALL YOURS TO DO WHATEVER YOU WANT.
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+THE ".env" FILE IS TO SAVE ALL THE SECRET VARIABLES OF THE SISTEM, LIKE THE BOT TOKEN,
+AND THE ID'S OF THE SERVER THINGS. ONLY EDIT THE VALUE OF EACH VARIABLE (The value
+after the "="). DO NOT SET THE NAME OF THE VARIABLES AND DO NOT ADD SPACES OR ENDLINES.
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+INSTALL AN RUN:
+
+If you want to run the bot, the main point is the file "index.js"...
+To run the bot in a computer, you need to install "Node JS"; the lastest version.
+After you install it into the computer will run it, on your console, go to this
+directory and run the comand "npm install", to update all the npm packages.
+
+> TO RUN THE BOT, RUN THE COMAND:
+	npm run bot
+
+> "npm run bot" is the main command to run the bot (setted into "package.json file).
+> You can run it also with:
+	node index.js
+
+Try to use the first command always.
+If you want to host the bot in your own service, use any of the above commands in
+the "worker" of the service.
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+SET THE DISCORD APP:
+
+Since you have already a discord bot app registered, you only need to do the following:
+> On the Discord Developer Portal (https://https://discord.com/developers/applications/)
+go to the bot application:
+	
+	1.  First, ban the bot from your server.
+	
+	2.  On "GENERAL INFORMATION": Give it a name, description (try to put on it the
+	    command to use it), and give five tags according to the bot thematic.
+	
+	2.  On "OATH2 >> GENERAL":
+		> Go to "Default Authorization Link >> "AUTHORIZATION METHOD" and set it
+		  as "In-app Authorization".
+		> Go to "SCOPES" and check both boxes ("bot" and "applications.commands").
+		> On "BOT PERMISSIONS" check "Administrator.
+		> Save changes.
+	
+	3.  On "OATH2 >> URL GENERATOR":
+		> In "SCOPES", check the boxes of "bot" and "applications.commands".
+		> On "BOT PERMISSIONS" check "Administrator".
+		> Copy the "GENERATED URL", and save it, it will allows you to invite the
+		  bot to your Discord Server, bot don't invite yet.
+		> Put the link in a navegator url bar, but don't join yet, it is only to
+		  save it if you change the copy another link.
+
+	4. On "BOT >> BUILD-A-BOT":
+		> Click on the button "RESET TOKEN", and copy the generated token.
+		> On "Authorization Flow" check ALL the permissions EXCEPT "REQUIRES
+		  OATH2 CODE GRANT".
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+SET THE DISCORD SERVER:
+
+Invite the bot with the link you have obtained. Enter to the link, select your Discord
+server and check the box of "Administrator", before invite the bot.
+
+IT IS IMPORTANT THAT YOU HAVE TO GO TO "SERVER SETTINGS >> ROLES" and set the permissions
+to the bot name role. Mark and all the permissions to the bot.
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+SET THE .env FILE ON THE DIRECTORY:
+
+In the .env directory you will see the special variables of the bot. You need to set the
+value of these variables as explained above.
+
+	> TOKEN: Put on it, the Token you copied in the Discord Developer Portal.
+	> WELCOMECHANNELID: This is the ID in where the bot will send welcome messages.
+	  The ID is necessary, you can change the name of the channel and it will works.
+	  To get the ID, rigth click on the channel (In Discord) and click te option
+	  "Copy ID". Paste this ID into the variable value on .env.
+
+
+IMPORTANT NOTE: THE ROLE THAT BOTS CREATE WHEN ENTER INTO THE SERVER, HAS TO BE ALWAYS
+UPPER IN HIERARCHY THAT THE ROLES THAT WILL GIVE TO USERS. GO TO "SERVER SETTINGS >>
+ROLES" ON YOUR DISCORD SERVER AND DRAG THE BOT ROLE UPPER TO THE REST OF ROLES.
+
+	> RUNESCAPEROLEID, IRONMANROLEID, HARDCOREROLEID, ULTIMATEROLEID: Paste on each
+	  one, the ID of the equivalent role. To get the role ID into Discord, go to
+	  "SERVER SETTINGS >> ROLES", and select the points option of the specific role
+	  you want to paste in .env. Select "COPY ID" option and paste it into the file.
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+AFTER YOU HAVE SETTED ALL THIS, RUN THE BOT, AND ENJOY.
+If it doesn't works, or you have a doubt, search a write me in social media as @arhcoder
+or send my a mail to arhcoder@gmail.com.
+
+═════════════════════════════════════════════════════════════════════════════════════════
+
+Made with love by Alejandro Ramos @arhcoder 💜´
+
+═════════════════════════════════════════════════════════════════════════════════════════
