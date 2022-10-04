@@ -1,14 +1,14 @@
-const hiscores = require('osrs-json-hiscores');
+const {getPlayer} = require('osrs-json-hiscores');
 
 hiscores
-.getStats("username")
+.getStats("Yeezy")
 .then((userStats) =>
 {
     // console.log(userStats);
     var gameMode = userStats.mode;
     var totalLevel = parseInt(userStats.main.skills.overall.level);
     var totalExperience = parseInt(userStats.main.skills.overall.xp);
-    console.log( gameMode);
+    console.log(gameMode);
     console.log(totalLevel);
     console.log(totalExperience);
     console.log(userStats.main.skills);
