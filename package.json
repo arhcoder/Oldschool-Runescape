@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "bot": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "engines": {
+        "node": "6.11.1"
+    }
   },
   "keywords": [
     "Discord",
@@ -14,11 +17,11 @@
     "Oldschool Runescape"
   ],
   "dependencies": {
+    "node": "^16.14.2",
     "axios": "^0.22.0",
     "discord.js": "^13.6.0",
     "dotenv": "^10.0.0",
     "esm": "^3.2.25",
-    "node": "^16.14.2",
     "node-fetch": "^2.6.7"
   }
 }
