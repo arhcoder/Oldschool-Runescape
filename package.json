@@ -1,14 +1,14 @@
 {
   "name": "spot-drops",
   "version": "1.0.0",
+  "engines": {
+      "node": "6.14.2"
+  },
   "description": "Discord bot to get info about players of Oldschool Runescape.",
   "main": "index.js",
   "scripts": {
     "bot": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "engines": {
-        "node": "6.14.2"
-    }
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Discord",
