@@ -151,7 +151,7 @@ function rsn(message, username)
 			message.member.roles.add(ultimateRolID);
 
 		// Send the embed message with the data //
-		let userStatsEmbed = new MessageEmbed()
+		let userStatsEmbed = new Discord.MessageEmbed()
 		.setTitle("Welcome to Spot Drops!")
 		.setDescription("User profile found for \"" + ("" + username).replaceAll(",", " ") + "\"")
 		.setFooter({ text: "Verified" })
@@ -178,7 +178,7 @@ function rsn(message, username)
 	// Print an api get error with a [catch] function if the OSRS API returns an error.
 	.catch(() =>
 	{
-		let userStatsEmbed = new MessageEmbed()
+		let userStatsEmbed = new Discord.MessageEmbed()
 		.setTitle(username.toString())
 		.setDescription("Invalid username, this may be because of a misspelling or internal error.\nCorrect: `!rsn username`.")
 		.setColor("RANDOM")
