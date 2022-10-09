@@ -4,7 +4,7 @@ require("dotenv").config();
 const Discord = require("discord.js");
 const { Client, GatewayIntentBits } = require("discord.js");
 const hiscores = require("osrs-json-hiscores");
-const { MessageEmbed } = require("discord.js");
+const { EmbedBuilder } = require("discord.js");
 const express = require("express");
 // const { getUserStats } = require("./osrs-api.js");
 
@@ -120,7 +120,6 @@ function rsn(message, username)
 
 		if (gameMode === "Main")
 		{
-
 			// if (member.roles.cache.has(ironmanRolID))
 			//   message.member.roles.remove(ironmanRolID);
 
@@ -151,11 +150,11 @@ function rsn(message, username)
 			message.member.roles.add(ultimateRolID);
 
 		// Send the embed message with the data //
-		let userStatsEmbed = new Discord.MessageEmbed()
+		let userStatsEmbed = new EmbedBuilder()
 		.setTitle("Welcome to Spot Drops!")
 		.setDescription("User profile found for \"" + ("" + username).replaceAll(",", " ") + "\"")
 		.setFooter({ text: "Verified" })
-		.setColor("RANDOM")
+		.setColor("Random")
 		.addFields(
 		{ name: "Account Type", value: gameMode.toString(), inline: true },
 		{ name: "Total Level", value: totalLevel.toLocaleString(), inline: true },
@@ -178,10 +177,10 @@ function rsn(message, username)
 	// Print an api get error with a [catch] function if the OSRS API returns an error.
 	.catch(() =>
 	{
-		let userStatsEmbed = new Discord.MessageEmbed()
+		let userStatsEmbed = new EmbedBuilder()
 		.setTitle(username.toString())
 		.setDescription("Invalid username, this may be because of a misspelling or internal error.\nCorrect: `!rsn username`.")
-		.setColor("RANDOM")
+		.setColor("Random")
 		.setFooter({ text: "Spot Drops" })
 		.setTimestamp(new Date())
 		message.reply({ embeds: [userStatsEmbed] })
