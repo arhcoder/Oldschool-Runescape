@@ -28,6 +28,7 @@ const client = new Discord.Client(
 	[
 		GatewayIntentBits.Guilds,
 		GatewayIntentBits.GuildMessages,
+		GatewayIntentBits.MessageContent,
 		GatewayIntentBits.GuildMembers
 	]
 });
